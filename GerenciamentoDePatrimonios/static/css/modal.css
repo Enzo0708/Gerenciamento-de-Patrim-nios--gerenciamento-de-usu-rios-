@@ -1,0 +1,113 @@
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 1000; 
+    font-family: poppins;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; 
+    padding: 40px;
+    border: none;
+    width: 90%; /* Ajusta a largura para telas maiores */
+    max-width: 800px; 
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-close button, .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    border: none;
+    color: #b01818;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adicionarH2Itens {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-add {
+    background-color: #b01818;
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+.btn-add:hover {
+    background-color: #9a1515;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Ajusta a largura para ocupar quase toda a tela */
+        padding: 20px; /* Reduz o padding */
+    }
+
+    .adicionarH2Itens {
+        font-size: 28px; /* Reduz o tamanho do título */
+    }
+
+    .modal-content input {
+        font-size: 14px; /* Reduz o tamanho da fonte dos inputs */
+    }
+
+    .btn-add {
+        padding: 14px 30px; 
+        font-size: 24px; 
+    }
+
+    .btn-close {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+}
